@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Clock</title>
+    <style media="screen">
+      /* Google font */
+      @import url('https://fonts.googleapis.com/css?family=Orbitron');
+      #clock{
+        font-family: 'Orbitron', sans-serif;
+        color: #66ff99;
+        font-size: 56px;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display:inline-block;
+        background-color: black;
+        height: 220px;
+        position: fixed;
+      }
+
+      #alarm{
+        display:flex;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <!--add an HTML 'canvas' element-->
+<div id = "alm">
+  <canvas id="myCanvas" width="300" height="300" style="background-color:black"></canvas>
+  <div id="clock"></div>
+  <div id="alarm">
+    <select id="hour">
+    </select>
+    <select id="minute">
+    </select>
+    <select id="second">
+    </select>
+    <textarea id="Reminder" name="name" rows="8" cols="80" placeholder="Reminder"></textarea>
+    <button type="button" name="button" onclick="test()">Save alarm</button>
+    <audio src="Alarm-ringtone.mp3" id="audio"></audio>
+  </div>
+</div>
+  </body>
+  <script src="hello.js" type="text/javascript"></script>
+  <script src="alarm.js" type="text/javascript" charset="utf-8"></script>
+</html>
